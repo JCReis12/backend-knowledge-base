@@ -40,3 +40,44 @@ Veja abaixo um exemplo de uma Classe representada em diagrama:
         + criarConta()void
     }
 ```
+3.Modele uma classe que represente um Post (de rede social).
+```mermaid
+    classDiagram
+    class PublicacaoInsta{
+        - String usuario
+        - Int quantFotos
+        - Int numCurtidas
+        - Datetime dataHora
+        - String legenda
+        + publicar()boolean
+        + deletar()boolean
+        + editar()void
+        + comentar(String texto)void
+        + curtir()void
+
+    }
+```
+
+4.Modele uma classe que represente uma Branch.
+```mermaid
+    classDiagram
+    class Branch{
+        - String repositorio
+        - String codigo
+        - String categoria
+        - Datetime dataHora
+        - Int Behind
+        - Int Ahead
+        - IntnumPullRequests
+        - Int numCommits
+        - Object [] conteudo
+        + criar()boolean
+        + deletar()boolean
+        + editar()boolean
+        + fazerPullRequest()boolean
+        + commitar()boolean
+        + push()boolean
+        + pull()boolean
+        + clonar()boolean
+    }
+```
