@@ -26,3 +26,17 @@ Veja abaixo um exemplo de uma Classe representada em diagrama:
         + desligar()
     }
 ```
+2. Modele uma classe que represente uma Conta Bancária.
+```mermaid
+    classDiagram
+    class ContaBancaria{
+        - Double saldo
+        - Int senha
+        - String titular
+        - Int numConta
+        - Int codAgencia
+        + depositar(double valor)boolean
+        + sacar(double valor)boolean
+        + criarConta()void
+    }
+```
