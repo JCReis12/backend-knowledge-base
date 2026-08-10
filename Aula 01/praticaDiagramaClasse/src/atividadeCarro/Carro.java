@@ -1,4 +1,4 @@
-package diagramaCarro;
+package atividadeCarro;
 public class Carro{
     String marca;
     String modelo;

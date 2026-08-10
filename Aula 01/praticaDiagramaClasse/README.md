@@ -37,7 +37,6 @@ Veja abaixo um exemplo de uma Classe representada em diagrama:
         - Int codAgencia
         + depositar(double valor)boolean
         + sacar(double valor)boolean
-        + criarConta()void
     }
 ```
 3.Modele uma classe que represente um Post (de rede social).
