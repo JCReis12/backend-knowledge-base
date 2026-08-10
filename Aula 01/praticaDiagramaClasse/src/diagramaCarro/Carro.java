@@ -1,9 +1,10 @@
+package diagramaCarro;
 public class Carro{
-    // Atributos
+    String marca;
+    String modelo;
     String cor;
     int velocidade;
 
-    // Metodos
     void acelerar(int valor){
         if(velocidade<200)
             velocidade+=valor;
