@@ -24,9 +24,33 @@ public class ObjetosContaBancaria{
         contaZ.saldo = 22700.0;
         contaZ.senha = 789;
 
-        
+        System.out.println("======== Operações do cliente " + contaX.titular + " ========");
+        System.out.println("Conta " + contaX.agencia + " de " + contaX.titular + ": ");
+        System.out.println("Saldo: " + contaX.saldo);
         contaX.depositar(11111, 1000.0, 123);
+        System.out.println("Saldo: " + contaX.saldo);
+        contaX.sacar(11111, 560.0, 123);
+        System.out.println("Saldo: " + contaX.saldo);
 
+        System.out.println("");
+
+        System.out.println("======== Operações do cliente " + contaY.titular + " ========");
+        System.out.println("Conta " + contaY.agencia + " de " + contaY.titular + ": ");
+        System.out.println("Saldo: " + contaY.saldo);
+        contaY.depositar(22222, 1000.0, 456);
+        System.out.println("Saldo: " + contaY.saldo);
+        contaY.sacar(22222, 560.0, 456);
+        System.out.println("Saldo: " + contaY.saldo);
+        
+        System.out.println("");
+
+        System.out.println("======== Operações do cliente " + contaZ.titular + " ========");
+        System.out.println("Conta " + contaZ.agencia + " de " + contaZ.titular + ": ");
+        System.out.println("Saldo: " + contaZ.saldo);
+        contaZ.depositar(33333, 1000.0, 789);
+        System.out.println("Saldo: " + contaZ.saldo);
+        contaZ.sacar(33333, 560.0, 789);
+        System.out.println("Saldo: " + contaZ.saldo);
 
 
 

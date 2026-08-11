@@ -12,6 +12,7 @@ public class ContaBancaria {
         if (senhap == senha) {
             if (valor > 0){
                 saldo += valor;
+                System.out.println("Deposito realizado com sucesso!");
             }
         }
     }
@@ -20,6 +21,7 @@ public class ContaBancaria {
         if (senhap == senha) {
             if (valor <= saldo){
                 saldo -= valor;
+                System.out.println("Saque realizado com sucesso!");
             }
         }
     }
