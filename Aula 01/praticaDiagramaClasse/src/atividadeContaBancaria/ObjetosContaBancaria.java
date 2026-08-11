@@ -23,5 +23,15 @@ public class ObjetosContaBancaria{
         contaZ.numConta = 33333;
         contaZ.saldo = 22700.0;
         contaZ.senha = 789;
+
+        
+        contaX.depositar(11111, 1000.0, 123);
+
+
+
+
+
+
+
     }
 }

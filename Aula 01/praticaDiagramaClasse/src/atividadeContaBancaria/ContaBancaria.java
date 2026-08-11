@@ -8,7 +8,7 @@ public class ContaBancaria {
     Double saldo;
     int senha;
 
-    void depositar(Double valor, int senhap){
+    void depositar(int numContap, Double valor, int senhap){
         if (senhap == senha) {
             if (valor > 0){
                 saldo += valor;
@@ -16,7 +16,7 @@ public class ContaBancaria {
         }
     }
 
-    void sacar(Double valor, int senhap){
+    void sacar(int numContap, Double valor, int senhap){
         if (senhap == senha) {
             if (valor <= saldo){
                 saldo -= valor;
