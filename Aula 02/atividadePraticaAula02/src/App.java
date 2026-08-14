@@ -1,5 +1,24 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        ContaBancaria conta01 = new ContaBancaria();
+        conta01.numero = 12345;
+        conta01.saldo = 0;
+
+        System.out.println("Conta " + conta01.numero + " | Saldo: R$ " + conta01.saldo + "0");
+        System.out.println("");
+        
+        conta01.depositar(500);
+        System.out.println("");
+        
+        System.out.println("Conta " + conta01.numero + " | Saldo: R$ " + conta01.saldo + "0");
+        System.out.println("");
+
+        conta01.sacar(256);
+        System.out.println("");
+
+        System.out.println("Conta " + conta01.numero + " | Saldo: R$ " + conta01.saldo + "0");
+
+
     }
 }
