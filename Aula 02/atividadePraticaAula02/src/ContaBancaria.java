@@ -9,4 +9,13 @@ public class ContaBancaria {
         saldo += valor;
         return true;
     }
+
+    public boolean sacar(double valor){
+        if(valor <= saldo){
+            saldo -= valor;
+            return true;
+        }
+        return false;
+    }
+
 }
