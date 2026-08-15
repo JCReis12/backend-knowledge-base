@@ -3,16 +3,18 @@ public class ContaBancaria {
     // Atributos
     private int numero;
     private double saldo;
+    private String nome;
 
 
     // Construtor
-    public ContaBancaria(int numero, double saldo){
+    public ContaBancaria(int numero, double saldo, String nome){
         this.numero = numero;
         this.saldo = saldo;
+        this.nome = nome;
     }
 
-    public ContaBancaria(int numero){
-        this(numero, 0);
+    public ContaBancaria(int numero, String nome){
+        this(numero, 0, nome);
     }
 
 
@@ -42,6 +44,13 @@ public class ContaBancaria {
         return false;
     }
 
+    public double checkBalance(int numero){
+        if(numero == this.numero){
+            return saldo;
+        }
+        return 0;
+    }
+
 
     // Getters e Setters
     public double getSaldo(){
@@ -56,7 +65,7 @@ public class ContaBancaria {
     // toString
     @Override
     public String toString(){
-        return "Conta " + numero + " | Saldo: R$ " + saldo + "0";
+        return "Conta " + numero + " | Titular: " + nome + " | Saldo: R$ " + saldo + "0";
     }
 
 
