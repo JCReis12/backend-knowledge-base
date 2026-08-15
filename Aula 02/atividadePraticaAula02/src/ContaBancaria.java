@@ -1,14 +1,15 @@
 public class ContaBancaria {
+    // Atributos
     int numero;
     double saldo;
-    
 
+    // Construtor
     public ContaBancaria(int numero, double saldo){
         this.numero = numero;
         this.saldo = saldo;
     }
 
-
+    // Métodos
     public boolean depositar(double valor){
         if(valor <= 0){
             return false;
@@ -26,5 +27,16 @@ public class ContaBancaria {
         }
         return false;
     }
+
+    // toString
+    @Override
+    public String toString(){
+        return "Conta " + numero + " | Saldo: R$ " + saldo + "0";
+    }
+
+
+
+
+
 
 }
