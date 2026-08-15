@@ -11,6 +11,10 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
+    public ContaBancaria(int numero){
+        this(numero, 0);
+    }
+
 
     // Métodos
     public boolean depositar(double valor){
