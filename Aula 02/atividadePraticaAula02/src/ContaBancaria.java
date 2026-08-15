@@ -1,13 +1,16 @@
 public class ContaBancaria {
+    
     // Atributos
-    int numero;
-    double saldo;
+    private int numero;
+    private double saldo;
+
 
     // Construtor
     public ContaBancaria(int numero, double saldo){
         this.numero = numero;
         this.saldo = saldo;
     }
+
 
     // Métodos
     public boolean depositar(double valor){
@@ -27,6 +30,17 @@ public class ContaBancaria {
         }
         return false;
     }
+
+
+    // Getters e Setters
+    public double getSaldo(){
+        return saldo;
+    }
+
+    public void setSaldo(double saldo){
+        this.saldo = saldo;
+    }
+
 
     // toString
     @Override
