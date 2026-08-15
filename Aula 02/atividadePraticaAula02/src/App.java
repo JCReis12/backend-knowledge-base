@@ -1,9 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        ContaBancaria conta01 = new ContaBancaria();
-        conta01.numero = 12345;
-        conta01.saldo = 0;
+        ContaBancaria conta01 = new ContaBancaria(12345, 0.0);
 
         System.out.println("Conta " + conta01.numero + " | Saldo: R$ " + conta01.saldo + "0");
         System.out.println("");

@@ -1,6 +1,13 @@
 public class ContaBancaria {
     int numero;
     double saldo;
+    
+
+    public ContaBancaria(int numero, double saldo){
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+
 
     public boolean depositar(double valor){
         if(valor <= 0){
