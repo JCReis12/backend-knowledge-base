@@ -1,5 +1,5 @@
 public class ContaBancaria {
-    
+
     // Atributos
     private int numero;
     private double saldo;
@@ -20,6 +20,13 @@ public class ContaBancaria {
         saldo += valor;
         System.out.println("Deposito de R$ " + valor + " executado com exito!");
         return true;
+    }
+
+    public boolean depositar(int numero, double valor){
+        if(numero != this.numero){
+            return false;
+        }
+        return depositar(valor);
     }
 
     public boolean sacar(double valor){
