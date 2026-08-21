@@ -2,7 +2,7 @@ public class Arquivo {
     // Atributos
     String name;
     int size;
-    String Content;
+    String content;
 
     // Métodos
     public String open(){
@@ -10,16 +10,16 @@ public class Arquivo {
     }
 
     public void edit(String newContent){
-        Content = newContent;
+        this.content = newContent;
     }
 
     public boolean rename(String newName){
-        name = newName;
+        this.name = newName;
         return true;
     }
 
     public void clear(){
-        Content = "";
+        content = "";
     }
     
     
