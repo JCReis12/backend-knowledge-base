@@ -5,6 +5,7 @@ public class Character {
     int defense;
 
     public void attack(Character opponent){
+        System.out.println(this.name + " está atacando");
         int damage = this.attack - opponent.defense;
 
         if(damage > 0){
