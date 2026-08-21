@@ -10,10 +10,17 @@ public class Arquivo {
     }
 
     public void edit(String newContent){
+        if(newContent == null){
+            System.out.println("Novo conteúdo inválido");
+        }
         this.content = newContent;
     }
 
     public boolean rename(String newName){
+        if(newName == null){
+            System.out.println("Novo nome inválido");
+            return false;
+        }
         this.name = newName;
         return true;
     }
