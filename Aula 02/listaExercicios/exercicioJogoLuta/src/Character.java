@@ -11,7 +11,13 @@ public class Character {
             opponent.life -= damage;
             System.out.println(opponent.name + " recebeu dano de " + damage);
         }
-        System.out.println("Ataque de " + this.name + " defendido!");
+        else if(damage == 0){
+            System.out.println("Ataque de " + this.name + " foi defendido por pouco!");
+        }
+        else{
+            System.out.println("Ataque de " + this.name + " defendido!");
+        }
+        
 
     }
 }
