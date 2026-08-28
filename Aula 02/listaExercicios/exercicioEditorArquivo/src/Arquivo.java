@@ -4,9 +4,16 @@ public class Arquivo {
     int size;
     String content;
 
+    // Construtores
+    public Arquivo(String name){
+        this.name = name;
+        size = 0;
+        content = "";
+    }
+
     // Métodos
     public String open(){
-        return "Arquivo ABRIDO com sucesso";
+        return content;
     }
 
     public void edit(String newContent){
@@ -14,6 +21,7 @@ public class Arquivo {
             System.out.println("Novo conteúdo inválido");
         }
         this.content = newContent;
+        size = newContent.length();
     }
 
     public boolean rename(String newName){
@@ -27,6 +35,7 @@ public class Arquivo {
 
     public void clear(){
         content = "";
+        size = 0;
     }
     
     
