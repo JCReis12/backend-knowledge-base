@@ -1,14 +1,14 @@
 public class Arquivo {
     // Atributos
     private String name;
-    private int size;
     private String content;
+    private int size;
 
     // Construtores
     public Arquivo(String name){
         this.name = name;
-        size = 0;
         content = "";
+        updateSize();
     }
 
     // Métodos
@@ -22,7 +22,7 @@ public class Arquivo {
             System.out.println("Novo conteúdo inválido");
         }
         this.content = newContent;
-        size = newContent.length()*8;
+        updateSize();
     }
 
     public boolean rename(String newName){
@@ -37,7 +37,7 @@ public class Arquivo {
 
     public void clear(){
         content = "";
-        size = 0;
+        updateSize();
     }
 
     // Getters e Setters
@@ -63,6 +63,12 @@ public class Arquivo {
 
     public void setContent(String content){
         this.content = content;
+    }
+
+
+    // Função para calcular automaticamente o tamanho do arquivo
+    private void updateSize(){
+        size = content.length()*8;
     }
 
 }
