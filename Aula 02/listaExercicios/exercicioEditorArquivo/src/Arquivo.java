@@ -1,8 +1,8 @@
 public class Arquivo {
     // Atributos
-    String name;
-    int size;
-    String content;
+    private String name;
+    private int size;
+    private String content;
 
     // Construtores
     public Arquivo(String name){
@@ -13,19 +13,21 @@ public class Arquivo {
 
     // Métodos
     public String open(){
-        return content;
+        return name + " | " + content + " | " + size;
     }
 
     public void edit(String newContent){
-        if(newContent == null){
+        newContent = newContent.trim();
+        if(newContent.isEmpty()){
             System.out.println("Novo conteúdo inválido");
         }
         this.content = newContent;
-        size = newContent.length();
+        size = newContent.length()*8;
     }
 
     public boolean rename(String newName){
-        if(newName == null){
+        newName = newName.trim();
+        if(newName.isEmpty()){
             System.out.println("Novo nome inválido");
             return false;
         }
@@ -37,6 +39,30 @@ public class Arquivo {
         content = "";
         size = 0;
     }
-    
-    
+
+    // Getters e Setters
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public int getSize(){
+        return size;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+
+    public String getContent(){
+        return content;
+    }
+
+    public void setContent(String content){
+        this.content = content;
+    }
+
 }
