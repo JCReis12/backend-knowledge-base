@@ -1,13 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Arquivo arq1 = new Arquivo();
+        Arquivo arq1 = new Arquivo("Arquivo 01");
 
-        arq1.name = "Anotações";
-        arq1.size = 32;
-        arq1.content = "Conteúdo inicial do meu arquivo primário";
-
-        System.out.println(arq1.name + " | " + arq1.size);
-        System.out.println("Conteúdo: " + arq1.content);
+        System.out.println(arq1.getName() + " | " + arq1.getSize());
+        System.out.println("Conteúdo: " + arq1.getContent());
 
         arq1.rename("Anotations");
         
