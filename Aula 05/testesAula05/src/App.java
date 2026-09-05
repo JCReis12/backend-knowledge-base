@@ -8,7 +8,7 @@ public class App {
             resultado = 10/0;
         }
         catch(Exception e){
-            System.out.println("Não foi possível calcular");
+            System.out.println("Não foi possível calcular: " + e);
         }
 
 
