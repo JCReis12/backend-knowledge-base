@@ -1,14 +1,22 @@
+import javax.swing.JOptionPane;
+
 public class App {
     public static void main(String[] args) throws Exception {
         int resultado = 0;
+        int divisor = -2;
 
         System.out.println("Tarefa 1");
         
         try{
-            resultado = 10/0;
+
+            if(divisor < 0){
+                throw new Exception("O divisor não pode ser negativo");
+            }
+
+            resultado = 10/divisor;
         }
         catch(Exception e){
-            System.out.println("Não foi possível calcular: " + e);
+            JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
 
