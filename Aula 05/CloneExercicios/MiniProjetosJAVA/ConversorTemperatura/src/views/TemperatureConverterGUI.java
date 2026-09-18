@@ -15,6 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
+import utils.Converter;
+
 // Esta classe será utilizada para construir a GUI
 public class TemperatureConverterGUI extends JFrame implements ActionListener {
 
@@ -105,7 +107,9 @@ public class TemperatureConverterGUI extends JFrame implements ActionListener {
                  * =========================================================
                  */
                 
-                
+                if (escalaOrigem.equals("Celsius") && escalaDestino.equals("Fahrenheint")){
+                    result = Double.toString(Converter.celsiusToFahrenheit(valorDigitado));
+                }
 
                 /* 
                  * =========================================================
