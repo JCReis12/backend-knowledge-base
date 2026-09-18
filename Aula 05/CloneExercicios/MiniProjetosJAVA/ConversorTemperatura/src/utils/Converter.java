@@ -27,7 +27,17 @@ public class Converter {
         return k-273;
     }
 
-    
+    public static double celsiusToKelvin(double c){
+        return fahrenheitToKelvin(celsiusToFahrenheit(c));
+    }
+
+    public static double fahrenheitToCelsius(double f){
+        return kelvinToCelsius(fahrenheitToKelvin(f));
+    }
+
+    public static double kelvinToFahrenheit(double k){
+        return celsiusToFahrenheit(kelvinToCelsius(k));
+    }
 
 
 }
