@@ -34,7 +34,7 @@ public class BankGUI extends JFrame implements ActionListener{
         /*****************************************************
         ** IMPLEMENTAR LÓGICA DE INICIALIZAÇÃO DO NOME AQUI **
         *****************************************************/
-        conta = new ContaBancaria(); 
+        ContaBancaria conta = new ContaBancaria(12345, "JC");
 
 
         // Encerra o programa quando o usuário clica no 'X'.
