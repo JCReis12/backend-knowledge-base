@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -89,7 +90,7 @@ public class TemperatureConverterGUI extends JFrame implements ActionListener {
     // Método obrigatório da interface ActionListener (captura do clique)
     @Override
     public void actionPerformed(ActionEvent e) {
-        // Verifica se o evento veio realmente do nosso botão
+        / Verifica se o evento veio realmente do nosso botão
         if (e.getSource() == btnConverter) {
             try {
                 // Captura o que foi digitado e converte para double
@@ -106,10 +107,12 @@ public class TemperatureConverterGUI extends JFrame implements ActionListener {
                  * INTEGRAÇÃO DA CLASSE DE CONVERSÃO AQUI ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
                  * =========================================================
                  */
+                if(escalaOrigem.equals("Celsius") && escalaDestino.equals("Fahrenheit"))
+                    result = Converter.celsiusToFahrenheit(valorDigitado) + " °F";
                 
-                if (escalaOrigem.equals("Celsius") && escalaDestino.equals("Fahrenheint")){
-                    result = Double.toString(Converter.celsiusToFahrenheit(valorDigitado));
-                }
+                
+                
+                
 
                 /* 
                  * =========================================================
@@ -122,13 +125,16 @@ public class TemperatureConverterGUI extends JFrame implements ActionListener {
 
             } catch (NumberFormatException ex) {
                 // Tratamento caso o usuario digite letras ou símbolos em vez de números
-                lblResult.setText("Valor inválido!");
+                JOptionPane.showMessageDialog(this, "Valor inválido!","Erro",0);
+            }catch (IllegalArgumentException ex){
+                JOptionPane.showMessageDialog(this, ex.getMessage(),"Erro",0);
+            }catch (Exception ex){
+                JOptionPane.showMessageDialog(this, "Erro","Erro",0);
             }
-        }
         if(e.getSource() == btnInvert){
             int aux = comboDestino.getSelectedIndex();
             comboDestino.setSelectedIndex(comboOrigem.getSelectedIndex());
             comboOrigem.setSelectedIndex(aux);
         }
     }
-}
+}}
