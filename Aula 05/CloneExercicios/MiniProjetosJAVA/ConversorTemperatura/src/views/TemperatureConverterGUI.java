@@ -90,7 +90,7 @@ public class TemperatureConverterGUI extends JFrame implements ActionListener {
     // Método obrigatório da interface ActionListener (captura do clique)
     @Override
     public void actionPerformed(ActionEvent e) {
-        / Verifica se o evento veio realmente do nosso botão
+        // Verifica se o evento veio realmente do nosso botão
         if (e.getSource() == btnConverter) {
             try {
                 // Captura o que foi digitado e converte para double
