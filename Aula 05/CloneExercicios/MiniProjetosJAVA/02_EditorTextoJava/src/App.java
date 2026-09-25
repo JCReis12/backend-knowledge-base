@@ -1,4 +1,5 @@
 import javax.swing.UIManager;
+import views.TextEditorGUI;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -14,7 +15,9 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        new BankGUI();
+
+        new TextEditorGUI();
+
+       
     }
 }
