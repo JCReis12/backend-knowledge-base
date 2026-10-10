@@ -29,6 +29,10 @@ public abstract class Forma {
     }
 
     // Método
+    public void trocarCor(){
+        cor = new Color(random.nextInt(0x1000000));
+    }
+
     public abstract void desenhar(Graphics2D g);
 
     public abstract void mover(int WIDTH, int HEIGHT);

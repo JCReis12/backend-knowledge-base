@@ -22,21 +22,21 @@ public class Retangulo extends Forma{
         if (velX < 0 && x <= 0) {
             x = 0;
             velX *= -1;
-            cor = new Color(random.nextInt(0x1000000));
+            trocarCor();
         } else if (velX > 0 && x + largura >= WIDTH) {
             x = WIDTH - largura;
             velX *= -1;
-            cor = new Color(random.nextInt(0x1000000));
+            trocarCor();
         }
 
         if (velY < 0 && y <= 0) {
             y = 0;
             velY *= -1;
-            cor = new Color(random.nextInt(0x1000000));
+            trocarCor();
         } else if (velY > 0 && y + altura >= HEIGHT) {
             y = HEIGHT - altura;
             velY *= -1;
-            cor = new Color(random.nextInt(0x1000000));
+            trocarCor();
         }
 
     }
