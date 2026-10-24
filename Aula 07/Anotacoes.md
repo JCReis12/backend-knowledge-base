@@ -26,3 +26,11 @@ filas: enqueue(), dequeue() -----> FIFO (First in, first out)
 
 
 
+# Relacionamento entre classes
+
+## Associação
+Ex: medico e paciente
+
+## Agregação/Composição (parte/todo)
+Ex: aluno e universidade
+
