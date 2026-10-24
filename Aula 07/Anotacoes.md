@@ -21,4 +21,8 @@ list.add("Olá");
 ## Interface
 
 ## Pilhas e Filas (stack e queue)
+pilha: push(), pop(), isEmpty() -----> LIFO (Last in, first out)
+filas: enqueue(), dequeue() -----> FIFO (First in, first out)
+
+
 
