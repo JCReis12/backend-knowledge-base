@@ -20,5 +20,11 @@ Normalmente quando utilizamos um sistema os dados ficam na RAM, a persistitencia
 Desacoplamento em Três Camadas(MVC)
 
 
+Entity - Repository - Service - Controller
+
+Observer: exemplo de inscrição e notificação de um canal no youtube
+
+
+Mapeamento com JPA/Hibernate e H2
 
 
