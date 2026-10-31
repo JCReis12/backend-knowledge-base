@@ -29,3 +29,31 @@ POO é um paradigma de programação que organiza o código em torno de **objeto
 - **Classe:** definição que descreve quais atributos e métodos certos objetos podem ter.
 - **Objeto:** instância concreta criada a partir de uma classe. Cada objeto pode ter valores próprios para seus atributos.
 
+### Exemplo conceitual
+
+Considere a classe `Pessoa`:
+
+- Atributos: `nome` e `idade`.
+- Método: `apresentar()`, que exibe ou retorna uma apresentação da pessoa.
+
+Uma pessoa específica, como Ana, com 20 anos, é um objeto (uma instância) da classe `Pessoa`. Outra instância pode representar João, com valores diferentes.
+
+```text
+Classe Pessoa
+  atributos: nome, idade
+  método: apresentar()
+
+Objeto ana
+  nome = "Ana"
+  idade = 20
+```
+
+## Classe e objeto: uma analogia
+
+Uma analogia filosófica comum relaciona:
+
+- **Classe** ao “mundo das ideias”: uma descrição geral do que algo pode ser.
+- **Objeto** ao “mundo sensível”: uma ocorrência concreta, com valores próprios.
+
+Por exemplo, a classe `Pessoa` descreve uma categoria; Ana é uma pessoa concreta. Essa comparação ajuda a visualizar a diferença, mas é uma analogia — não uma regra técnica da POO.
+
