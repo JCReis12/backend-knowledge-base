@@ -1,8 +1,6 @@
-Arquitetura monolítica - ruim
-POO - Programação Orientada a Objetos, divide os códigos em partes melhores, facilitando manutenções e entendimento do código.
+# Aula 01 — Fundamentos de arquitetura e POO
 
-Atributos(caracteristicas) e Métodos(comportamentos)
+## Arquitetura monolítica
 
-Paradigmas de POO com bases filosóficas:
-    - Classe -> Mundo das Ideias -> Atributos e métodos
-    - Objetos -> Mundo Sensível
+Uma aplicação monolítica é construída e executada como uma unidade única. Suas partes — como interface, regras de negócio e acesso a dados — podem estar organizadas em módulos, mas costumam ser empacotadas e implantadas juntas.
+
