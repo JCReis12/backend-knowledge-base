@@ -57,3 +57,18 @@ Uma analogia filosófica comum relaciona:
 
 Por exemplo, a classe `Pessoa` descreve uma categoria; Ana é uma pessoa concreta. Essa comparação ajuda a visualizar a diferença, mas é uma analogia — não uma regra técnica da POO.
 
+## Princípios frequentemente associados à POO
+
+Estes conceitos complementam a distinção entre classes, objetos, atributos e métodos:
+
+- **Encapsulamento:** reunir dados e operações relacionadas e controlar como o estado interno é acessado ou alterado.
+- **Abstração:** destacar os aspectos relevantes de um objeto e deixar detalhes desnecessários de fora.
+- **Herança:** permitir que uma classe especializada aproveite ou estenda características de outra. Deve ser usada quando a relação entre os tipos fizer sentido.
+- **Polimorfismo:** permitir que objetos de tipos diferentes respondam à mesma operação de maneiras próprias.
+
+## Para revisar
+
+1. Qual é a diferença entre uma classe e um objeto?
+2. Em uma classe `Produto`, quais poderiam ser dois atributos e um método?
+3. Por que dizer que “arquitetura monolítica é ruim” é uma simplificação?
+4. Como o encapsulamento pode ajudar a proteger o estado de um objeto?
